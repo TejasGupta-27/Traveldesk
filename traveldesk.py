@@ -164,7 +164,7 @@ class BinaryTree:
         
 
     def get_number_of_nodes(self):
-        # Return the number of nodes in the tree (not implemented here)
+        
         def count(root):
             if root is None:
                 return 0
@@ -182,7 +182,7 @@ class BinarySearchTree(BinaryTree):
         current=self.root
         while current.get_left_ptr() is not None :
             current=current.get_left_ptr()
-        # Return the element with the minimum key (not implemented here)
+       
         return current 
 
     def get_element_with_maximum_key(self):
@@ -206,7 +206,7 @@ class BinarySearchTree(BinaryTree):
                     current=current.get_right_ptr()   
                     
         return None            
-        # Search for a node with the given key (not implemented here)
+      
         
     def get_successor_node(self, node):
         if node is None :
@@ -227,7 +227,7 @@ class BinarySearchTree(BinaryTree):
         
         
 
-        # Find the successor node of the given node (not implemented here)
+        
         
 
     def get_predecessor_node(self, node):
@@ -407,14 +407,6 @@ class TravelDesk:
             Service_Object.add_trip(key=departure_time,trip=Trip_Object)
 
 
-
-        # Create a new trip and add it to the appropriate objects (not implemented here)
-
-        # Create or retrieve the Location object and associated pick up location (not implemented here)
-
-
-        # Add the trip to the TransportService's BST (not implemented here)
-
     def show_trips(self, pick_up_location, after_time, before_time):
         result=[]
         if after_time>before_time:
@@ -444,10 +436,10 @@ class TravelDesk:
                     if j.get_departure_time()<before_time and j.get_departure_time()>after_time and j.get_drop_location()==destination:
                         result.append(j)
 
-        # Retrieve the relevant TransportService of specific destination first then iterate over the BST to find trips within a specified time range (not implemented here)
+       
         return result
              
-        # Retrieve the relevant TransportService first then iterate over the BST to find trips within a specified time range (not implemented here)
+       
 
 
     def book_trip(self, pick_up_location, drop_location, vehicle_number, departure_time):
@@ -470,7 +462,7 @@ class TravelDesk:
             print("heloo")
             Service_Object.delete_trip(departure_time)    
             return None
-        # Find the corresponding trip to book the seat and have proper validation (not implemented here)
+       
         return Node.get_trip_node_ptr()
        
 
